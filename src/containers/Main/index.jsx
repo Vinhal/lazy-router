@@ -1,24 +1,20 @@
-import React, { Suspense } from 'react'
-import { Route, Switch } from 'react-router-dom'
+import React from 'react'
+import { Switch } from 'react-router-dom'
 import routes from '../../routes'
-import Loading from 'components/Loading'
-import StyledContainer from './style'
+import AppRoute from './AppRoute'
+import { ContainerStyled } from './style'
 
 const Main = () => (
-  <StyledContainer>
-    <Suspense fallback={<Loading />}>
-      <Switch>
-        {routes.map(route => (
-          <Route
-            key={route.path}
-            path={route.path}
-            exact={route.exact}
-            component={route.main}
-          />
-        ))}
-      </Switch>
-    </Suspense>
-  </StyledContainer>
+  <ContainerStyled>
+    <Switch>
+      {routes.map(route => (
+        <AppRoute
+          key={route.path}
+          {...route}
+        />
+      ))}
+    </Switch>
+  </ContainerStyled>
 )
 
 export default Main

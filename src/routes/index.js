@@ -1,7 +1,7 @@
-import Home from './home'
+import Pages from './pages'
 
 const routes = [
-  ...Home
+  ...Pages
 ]
 
 export default routes

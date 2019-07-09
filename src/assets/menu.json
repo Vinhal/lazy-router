@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Page 1",
+        "link": "/",
+        "icon": "home",
+        "id": "menu-home"
+    },
+    {
+        "title": "Page 1",
+        "link": "/p2",
+        "icon": "home",
+        "id": "menu-home"
+    },
+    {
+        "title": "Page 1",
+        "link": "/p3",
+        "icon": "home",
+        "id": "menu-home"
+    },
+    {
+        "title": "Page 1",
+        "link": "/p4",
+        "icon": "home",
+        "id": "menu-home"
+    }
+]
